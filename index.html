@@ -1,1 +1,190 @@
-<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>HTMLs</title><link href="https://fonts.googleapis.com/css?family=Lora:300,400,600,700" rel="stylesheet"><style>*{margin:0;padding:0}body,html{height:100%}.footer{margin-top:-150px;height:150px;background-color:#fff;z-index:9999;color:#333;font-size:.9rem;text-align:center;font-family:Arial}.wrap{min-height:100%}.main{padding-top:150px;display:flex;justify-content:center;align-items:center;width:auto;background:#fff}.logo{font-family:'Lora';color:#000;font-size:3rem}.fa-code{font-size:2.4rem;}.switch_box{display:-webkit-box;display:-ms-flexbox;display:flex;max-width:100%;min-width:100px;height:100px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-ms-flex:1;flex:1}.box_3{background:#fff}.toggle_switch{width:100px;height:30px;border:none;outline:none;position:relative}input[type=checkbox].switch_3{-webkit-appearance:none;-moz-appearance:none;appearance:none;position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;cursor:pointer;outline:none;border:none;z-index:1}svg.checkbox .outer-ring{stroke-dasharray:375;stroke-dashoffset:375;-webkit-animation:resetRing .35s ease-in-out forwards;animation:resetRing .35s ease-in-out forwards}input[type=checkbox].switch_3:checked+svg.checkbox .outer-ring{-webkit-animation:animateRing .35s ease-in-out forwards;animation:animateRing .35s ease-in-out forwards}input[type=checkbox].switch_3:checked+svg.checkbox .is_checked{opacity:1;-webkit-transform:translateX(0) rotate(0);transform:translateX(0) rotate(0)}input[type=checkbox].switch_3:checked+svg.checkbox .is_unchecked{opacity:0;-webkit-transform:translateX(-200%) rotate(180deg);transform:translateX(-200%) rotate(180deg)}svg.checkbox{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%}svg.checkbox .is_checked{opacity:0;fill:#fff;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transform:translateX(200%) rotate(45deg);transform:translateX(200%) rotate(45deg);-webkit-transition:all .35s;transition:all .35s}svg.checkbox .is_unchecked{opacity:1;fill:#000;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transform:translateX(0) rotate(0);transform:translateX(0) rotate(0);-webkit-transition:all .35s;transition:all .35s}@-webkit-keyframes animateRing{to{stroke-dashoffset:0;stroke:#b0aa28}}@keyframes animateRing{to{stroke-dashoffset:0;stroke:#555}}@-webkit-keyframes resetRing{to{stroke-dashoffset:0;stroke:#555}}@keyframes resetRing{to{stroke-dashoffset:0;stroke:#555}}[data-theme=dark]{background-color:#000!important;color:#eee}[data-theme=dark] .main{background-color:#000!important;color:#eee}[data-theme=dark] .logo{color:#fff}[data-theme=dark] .box_3{background-color:#000!important;color:#eee}[data-theme=dark] .footer{background-color:#000!important;color:#eee}</style><link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"><script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script><script src="https://cdn.bootcss.com/moment.js/2.24.0/moment-with-locales.min.js"></script></head><body><div class="wrap"><div class="main"><div class="logo"><i class="fas fa-feather-alt"></i> HTMLs</div><div></div></div></div><div class="footer"><div class="switch_box box_3"><div class="toggle_switch"><input type="checkbox" class="switch_3" id="darkSwitch"><svg class="checkbox" xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" viewBox="0 0 168 80"><path class="outer-ring" d="M41.534 9h88.932c17.51 0 31.724 13.658 31.724 30.482 0 16.823-14.215 30.48-31.724 30.48H41.534c-17.51 0-31.724-13.657-31.724-30.48C9.81 22.658 24.025 9 41.534 9z" fill="none" stroke="#233043" stroke-width="3" stroke-linecap="square" stroke-miterlimit="3"></path><path class="is_unchecked" d="M17 39.482c0-12.694 10.306-23 23-23s23 10.306 23 23-10.306 23-23 23-23-10.306-23-23z"></path><path class="is_checked" d="M132.77 22.348c7.705 10.695 5.286 25.617-5.417 33.327-2.567 1.85-5.38 3.116-8.288 3.812 7.977 5.03 18.54 5.024 26.668-.83 10.695-7.706 13.122-22.634 5.418-33.33-5.855-8.127-15.88-11.474-25.04-9.23 2.538 1.582 4.806 3.676 6.66 6.25z"></path></svg></div></div>Hosted by Github, Updated on <span class="updated" datetime="2019-12-22T20:00:00+08:00">2019-12-22T20:00:00+08:00</span></div><script type="text/javascript">$(document).ready(function(){moment.locale(""),$(".updated").each(function(t,e){var m=$(e);m.html(moment(m.attr("datetime")).fromNow())})});</script><script>!function(){var t,e=document.getElementById("darkSwitch");e&&(t=null!==localStorage.getItem("darkSwitch")&&"dark"===localStorage.getItem("darkSwitch"),(e.checked=t)?document.body.setAttribute("data-theme","dark"):document.body.removeAttribute("data-theme"),e.addEventListener("change",function(t){e.checked?(document.body.setAttribute("data-theme","dark"),localStorage.setItem("darkSwitch","dark")):(document.body.removeAttribute("data-theme"),localStorage.removeItem("darkSwitch"))}))}();</script></body></html>
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>HTMLs</title>
+<link href="https://fonts.googleapis.com/css?family=Lora:300,400,600,700" rel="stylesheet">
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+.wrap {
+	min-height: 100%;
+}
+.main {
+	padding-top: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+}
+.logo {
+	font-family: 'Lora';
+	font-size: 3rem;
+}
+.footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	font-size:.9rem;
+	text-align: center;
+	font-family: 'Lora';
+}
+body {
+	background: #FFFFFF;
+	height:100%;
+	-webkit-transition: background-color 150ms ease-out !important;
+	transition: background-color 150ms ease-out !important;
+}
+[data-theme=dark] {
+	background-color: #25272A;
+	color:#eee;
+}
+.button-con {
+	cursor: default;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -76px;
+	margin-top: -18px;
+}
+#dayIcon {
+	position: relative;
+	width: 26px;
+	height: 26px;
+	top: -3px;
+	margin: 0 7px;
+	fill: #9caec0;
+}
+#nightIcon {
+	position: relative;
+	width: 26px;
+	height: 26px;
+	top: -3px;
+	margin: 0 7px;
+	fill: #9caec0;
+}
+#dayIcon, #nightIcon {
+	cursor: pointer;
+}
+.toggle {
+	display: none;
+}
+.toggle, .toggle:after, .toggle:before, .toggle *, .toggle *:after, .toggle *:before, .toggle + .toggle-button {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.toggle::-moz-selection, .toggle:after::-moz-selection, .toggle:before::-moz-selection, .toggle *::-moz-selection, .toggle *:after::-moz-selection, .toggle *:before::-moz-selection, .toggle + .toggle-button::-moz-selection {
+	background: none;
+}
+.toggle::selection, .toggle:after::selection, .toggle:before::selection, .toggle *::selection, .toggle *:after::selection, .toggle *:before::selection, .toggle + .toggle-button::selection {
+	background: none;
+}
+.toggle + .toggle-button {
+	outline: 0;
+	display: inline-block;
+	width: 4em;
+	height: 2em;
+	position: relative;
+	cursor: pointer;
+	border: 2px solid #333;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.toggle + .toggle-button:after, .toggle + .toggle-button:before {
+	position: relative;
+	display: block;
+	content: "";
+	width: 50%;
+	height: 100%;
+}
+.toggle + .toggle-button:after {
+	left: 0;
+}
+.toggle + .toggle-button:before {
+	display: none;
+}
+.toggle:checked + .toggle-button:after {
+	left: 50%;
+}
+.toggle + .toggle-button {
+	padding: 2px;
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	border: 2px solid rgba(156, 174, 192, 0.27);
+	border-radius: 2em;
+}
+.toggle + .toggle-button:after {
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	background: rgba(156, 174, 192, 0.27);
+	content: "";
+	border-radius: 1em;
+}
+.toggle:checked + .toggle-button:after {
+	left: 50%;
+}
+</style>
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.24.0/moment-with-locales.min.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<div class="main">
+		<div class="logo"><i class="fas fa-feather-alt"></i> HTMLs</div>
+	<div>
+	<div class="button-con">
+	  <label for='darkSwitch'>
+	    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">
+	      <g id="Sun">
+	        <g>
+	          <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z" />
+	        </g>
+	      </g>
+	    </svg>
+	  </label>
+	  <input class='toggle' id='darkSwitch' type='checkbox'>
+	  <label class='toggle-button' for='darkSwitch'></label>
+	  <label for='darkSwitch'>
+	    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+	      <path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z" />
+	    </svg>
+	  </label>
+	</div>
+</div>
+<div class="footer">
+	Hosted by Github, Updated on <span class="updated" datetime="2019-12-22T21:45:00+08:00">2019-12-22T21:45:00+08:00</span>
+</div>
+<script>
+	$(document).ready(function () {
+	  moment.locale('');
+	
+	  $('.updated').each(function (i, date) {
+	    var $date = $(date);
+	        
+	    $date.html(
+	      moment($date.attr('datetime'))
+	        .fromNow()
+	    );
+	  });
+	});
+	!function() {
+	    var t,
+	        e = document.getElementById("darkSwitch");
+	    if (e) {
+	        t = null !== localStorage.getItem("darkSwitch") && "dark" === localStorage.getItem("darkSwitch"), (e.checked = t) ? document.body.setAttribute("data-theme", "dark") : document.body.removeAttribute("data-theme"), e.addEventListener("change", function(t) {
+	            e.checked ? (document.body.setAttribute("data-theme", "dark"), localStorage.setItem("darkSwitch", "dark")) : (document.body.removeAttribute("data-theme"), localStorage.removeItem("darkSwitch"))
+	        })
+	    }
+	}();
+</script>
+</body>
+</html>
